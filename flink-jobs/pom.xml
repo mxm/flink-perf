@@ -30,19 +30,13 @@
 	</repositories>
 
 	<properties>
-		<flink.version>0.9-SNAPSHOT</flink.version>
+		<flink.version>0.10-SNAPSHOT</flink.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-core</artifactId>
-			<version>${flink.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-compiler</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
 
