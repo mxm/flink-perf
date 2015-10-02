@@ -57,7 +57,7 @@ public class AdaptivePageRank {
 		int numIterations = args.length > 3 ? Integer.valueOf(args[2]) : 100;
 
 		ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
-	//	env.setDegreeOfParallelism(4);
+	//	env.setParallelism(4);
 
 		DataSet<Tuple2<Long, long[]>> adjacency = env.readTextFile(adjacencyPath).map(new AdjacencyBuilder());
 		DataSet<Tuple2<Long, long[]>> adjacency2 = env.readTextFile(adjacencyPath).map(new AdjacencyBuilder());

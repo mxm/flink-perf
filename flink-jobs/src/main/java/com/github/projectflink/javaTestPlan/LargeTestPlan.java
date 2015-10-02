@@ -370,7 +370,7 @@
 //			.writeAsCsv(outputTableDirectory + "/Test10.tbl", "\n", "|");
 //		// END: TEST 10
 //
-//		env.setDegreeOfParallelism(num);
+//		env.setParallelism(num);
 //		JobExecutionResult result = env.execute();
 //
 //		PrintWriter out = new PrintWriter(outputAccumulatorsPath);
